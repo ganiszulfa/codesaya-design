@@ -1,0 +1,651 @@
+
+
+
+<!--
+                 __
+                /\ \
+  ___    ___    \_\ \     __    ____     __     __  __     __
+ /'___\ / __`\  /'_` \  /'__`\ /',__\  /'__`\  /\ \/\ \  /'__`\
+/\ \__//\ \L\ \/\ \L\ \/\  __//\__, `\/\ \L\.\_\ \ \_\ \/\ \L\.\_
+\ \____\ \____/\ \___,_\ \____\/\____/\ \__/.\_\\/`____ \ \__/.\_\
+ \/____/\/___/  \/__,_ /\/____/\/___/  \/__/\/_/ `/___/> \/__/\/_/
+                                                    /\___/
+                                                    \/__/
+-->
+<!DOCTYPE html>
+
+<html lang="id" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CodeSaya | Siapa nama anda? | JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hai..! Mari mengenal satu sama lain. Siapa nama anda? | Belajar coding secara mudah dan menyenangkan tanpa perlu setup apapun. Belajar Programming. Belajar PHP. Belajar JavaScript.">
+        <meta name="author" content="Ganis Zulfa Santoso">
+
+<meta property="fb:app_id" content="800754373315498"/>
+
+
+        <link href="/codesaya-design/static/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/codesaya-design/static/css/stickyfooter.css">
+        <link href="/codesaya-design/static/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="/codesaya-design/static/css/docs.css" rel="stylesheet">
+        <link href="/codesaya-design/static/css/googleprettify.css" rel="stylesheet">
+
+        <style type="text/css">
+            .btn-progress {
+                width:100%;
+            }
+            .jumbotron h1 {
+                font-size:60px;
+            }
+            .jumbotron p {
+                font-size:24px;
+            }
+            .subhead h1 {
+                font-size:40px;
+            }
+            .subhead p {
+                font-size:20px;
+                color:#ddd;
+            }
+            .subhead {
+                padding:10px 0;
+            }
+            .masthead {
+                padding:30px 0 20px;
+            }
+            .masthead .btn{
+                padding:14px 19px;
+                font-size:18px;
+            }
+            .marketing h1{
+                font-size:40px;
+            }
+            .marketing h2{
+                font-size:28px;
+            }
+            .footer {
+                margin-top:0px;
+            }
+            .footer {
+                padding:15px 0 0;
+            }
+            hr.soften {
+                margin:15px 0;
+            }
+            .marketing > hr.soften {
+                margin:35px 0;
+            }
+            .tooltip_class {
+                font-size:12px;
+            }
+            .footer_below{
+                background-color:#ececec;
+                border-top: 1px solid #e0e0e0;
+                margin-top:30px;
+                padding:10px 0;
+            }
+            .jumbotron {
+                background: -moz-linear-gradient(45deg,  rgb(2, 0, 30)  0%, rgb(29, 39, 100) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,  rgb(2, 0, 30) ), color-stop(100%, rgb(29, 39, 100))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(45deg,  rgb(2, 0, 30)  0%, rgb(29, 39, 100) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(45deg,   rgb(2, 0, 30) 0%, rgb(29, 39, 100) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(45deg,  rgb(2, 0, 30) 0%, rgb(29, 39, 100) 100%); /* IE10+ */
+                background: linear-gradient(60deg, rgb(2, 0, 30) 0%, rgb(29, 39, 100) 75%) repeat scroll 0% 0% transparent;
+
+            }
+            .navbar-fixed-top, .navbar-fixed-bottom {
+                position: static;
+            }      
+            .navbar-inner {
+                padding:0px !important;
+            }
+            body {
+                padding-top:0;
+            }
+            .center {
+                text-align:center;
+            }
+            .alert-not-a-member {
+                margin-top:10px;
+                margin-bottom:-10px;
+            }
+            .list-score .btn {
+                width:35px;
+                margin-left:5px;
+            }
+            .task-container {
+                margin-top:5px;
+            }
+            .profile_image {
+                margin-top:10px;
+
+            }
+            .profile_location {
+                font-size:14px;
+                color:#ccc;
+            }
+            .list-progress {
+                position:absolute;
+                top:5px;
+                right:10px;
+                width:100px;
+            }
+            .progress-black > .bar {
+                color:white;
+                background-color:#333;
+            }
+            .profile_div {
+                padding:10px 0;
+            }
+            .profile_name {
+                font-size:28px;
+                font-weight:bold;
+            }
+            #___plus_0, #___plus_1 {
+                margin-left:-33px !important;
+            }
+        </style>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="/codesaya-design/static/js/html5shiv.js"></script>
+        <![endif]-->
+
+        
+<link rel="stylesheet" type="text/css" href="/codesaya-design/static/codemirror-3.14/lib/codemirror.css">
+<link rel="stylesheet" type="text/css" href="http://codemirror.net/theme/ambiance.css">
+<style type="text/css">
+    .brand {
+        position:absolute;
+        left:10px;
+    }
+    .user-btn {
+        position:absolute !important;
+        right:10px;
+        }
+    .bar-main_menu {
+        display:none;
+    }
+    #push
+    {
+        height: 34px;
+    }
+    .footer_below {
+        margin-top:0;
+    }
+    .footer {
+        padding: 0;
+    }
+    #wrap {
+        margin: 0 auto -34px;
+    }
+    .task_info_content {
+        padding:10px;
+        width:310px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position:absolute;
+        margin-top:44px;
+        margin-bottom:34px;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+    }
+    .code_input_div {
+        position:absolute;
+        margin-top:44px;
+        margin-bottom:34px;
+        margin-left:330px;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        width:auto;
+        height:auto;
+        z-index:100;
+    }
+    .CodeMirror.cm-s-ambiance {
+        height:auto !important;
+        position:absolute;
+        margin-top:39px;
+        margin-bottom:140px;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        z-index:100;
+    }
+
+    .finished_div {
+        width:320px;
+        z-index:250;
+        position:absolute;
+        left:30px;
+        top:30px;
+    }
+
+    .code_output {
+        overflow-y:auto;
+        height:100px;
+    }
+
+    .badge_div {
+        z-index:300;
+        position:absolute;
+        left:30px;
+        top:30px;
+    }
+
+    .code_output_div {
+        z-index:200;
+        position:absolute;
+        bottom:130px;
+        left:20px;
+        right:20px;
+        max-width:500px;
+    }
+
+    .output_content {
+        padding:10px;
+    }
+    .output {
+        position:absolute;
+        background-color:#555 ;
+        color:white;
+        height:139px;
+        border-top:1px solid #777;
+        width:100%;
+        bottom:0;
+        font-family:Monaco,Menlo,"Andale Mono","lucida console","Courier New",monospace !important;
+    }
+    .output_header {
+        padding:3px 7px;
+    }
+    .prettyprint {
+    padding:2px 4px;
+    }
+    pre.prettyprint {
+    padding: 6px !important;
+    overflow-x:auto;
+    white-space:pre;
+    }
+    .cm-s-ambiance .cm-comment {
+        color: rgb(129, 129, 129);
+    }
+    .cm-s-ambiance .CodeMirror-linenumber {
+        color: rgb(10, 10, 10);
+    }
+    .alert-success {
+    color:rgb(50, 80, 50);
+    }
+    .alert-info {
+    color:rgb(30, 90, 130);
+    }
+</style>
+
+
+        <!-- Le fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" href="/codesaya-design/static/img/favicon_cs.png">
+        <link rel="shortcut icon" href="/codesaya-design/static/img/favicon_cs.ico">
+    </head>
+
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <div id="wrap">
+            <!-- Navbar-->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="brand" href="/">CodeSaya</a>
+                        <div class="bar-main_menu">
+                            <ul class="nav">
+                                
+                                <li None>
+                                <a href="/"><i class="icon-home icon-white"></i> Utama</a>
+                                </li>
+                                <li None>
+                                <a href="/belajar/"><i class="icon-asterisk icon-white"></i> Belajar</a>
+                                </li>
+                                <li None>
+                                <a href="/diskusi/"><i class="icon-comment icon-white"></i> Diskusi</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+
+                                
+
+                         
+                        <div class="user-btn pull-right btn-group">
+                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-user icon-white"></i> ganis
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="pull-right dropdown-menu">
+                                <li><a href="/u/ganis/"><i class="icon-user"></i> Lihat Profil</a></li>
+                                <li><a href="/u/ganis/edit/"><i class="icon-pencil"></i> Ubah Profil</a></li>
+                                 
+                                <li class="divider"></li>
+                                <li><a href="/javascript/pengenalan-javascript/saling-mengenal/unit/1/"><i class="icon-chevron-left"></i> Tugas Berikutnya</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="/keluar/"><i class="icon-off"></i> Keluar</a></li>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Begin page content -->
+
+            <div class="main_container">
+                
+
+                <div class="container">
+                    <div class="row">
+                        
+
+<div class="task-container container">
+    <div class="row">
+        <div class="span4 task_info">
+            <div class="task_info_content">
+                
+
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- cs_ads_on_task -->
+                <ins class="adsbygoogle"
+                         style="display:inline-block;width:320px;height:50px"
+                              data-ad-client="ca-pub-3842907543632795"
+                                   data-ad-slot="3451447202"></ins>
+                               <script>
+                                   (adsbygoogle = window.adsbygoogle || []).push({});
+                               </script>
+                               <br/>
+
+                <div class="back_to_content">
+                    <a href="../../../" class="btn btn-inverse btn-mini"><i class="icon-chevron-left icon-white"></i>kembali ke daftar isi</a>
+                    <div class="btn-group btn-mini pull-right">
+                        <a class="btn dropdown-toggle btn-mini" data-toggle="dropdown" href="#">daftar unit<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            
+                            <li class="">
+                            <a data-toggle="tooltip" title="Siapa nama anda?" href="#/" class="  ">
+                                
+                                <i class="icon-ok"></i>
+                                
+                                Unit 1: Siapa nama anda?
+                                
+                                <i class="icon-fire"></i> 
+                                
+                            </a></li>
+                            
+                            <li class="">
+                            <a data-toggle="tooltip" title="Mencari Panjang String" href="../2/" class="  ">
+                                
+                                <i class="icon-ok"></i>
+                                
+                                Unit 2: Mencari Panjang String
+                                
+                            </a></li>
+                            
+                            <li class="">
+                            <a data-toggle="tooltip" title="Matematika Sederhana" href="../3/" class="  ">
+                                
+                                <i class="icon-ok"></i>
+                                
+                                Unit 3: Matematika Sederhana
+                                
+                            </a></li>
+                            
+                            <li class="">
+                            <a data-toggle="tooltip" title="Angka dan yang lain" href="../4/" class="  ">
+                                
+                                <i class="icon-ok"></i>
+                                
+                                Unit 4: Angka dan yang lain
+                                
+                            </a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                                
+                
+                
+                <div alt="Terselesaikan!" data-toggle="tooltip" title="Anda sudah menyelesaikan tugas ini." style="margin-top:5px;" id="task_status" class="pull-right label label-success">
+                    <i class="icon-ok"></i>
+                </div>
+                
+                
+                                
+                
+                                
+                
+                                
+                
+                
+                <h3>
+                    Siapa nama anda?
+                </h3>
+                <div class="tutorial">
+                    
+                    Hai..! Mari mengenal satu sama lain. Siapa nama anda?
+                    
+                </div>
+                <hr class="soften"/>
+                <div class="instruction alert alert-success">
+                    <b><i class="icon-arrow-right"></i> Instruksi:</b><br />
+                    
+                    Ketik nama anda, dan beri tanda petik di sekitarnya. Seperti ini: <code>"Bill Gates"</code> dan tekan tombol "Periksa dan Simpan".
+                    
+                
+           
+                </div>
+                </div>
+                <a target="_blank" style="position:fixed;bottom:7px;left:10px;font-size:16px;"_blank" data-toggle="tooltip" title="Buka forum diskusi untuk subchapter ini." href="/diskusi/javascript/pengenalan-javascript/saling-mengenal/" class="center full-width">
+                    <i class="icon-comment"></i> Forum Diskusi
+                </a>
+        </div> <!-- end task info -->
+
+        <div class="span8 code_input_div">
+            <div class="form_button">
+                <button href="#"  class="pull-left btn btn-inverse btn-large">script.js</button>
+                <button href="#" data-toggle="tooltip" title="Periksa & simpan code anda." style="margin-left:10px;" class="btn btn-info submit_code">Periksa & Simpan</button>
+                <button data-toggle="tooltip" title="Mengulangi code dari awal." class="btn reset_code btn-danger" style="margin-left:10px;" type="reset">Ulangi</button>
+                <a data-toggle="tooltip" title="Menuju soal berikutnya." style="margin-left:10px;" class="btn disabled btn-inverse next_btn">Berikutnya</a>
+            </div>
+            <textarea name="code" id="code_console">"ganis"</textarea>
+
+            <div class="hidden" id="initial_code"></div>
+
+            <div class="code_output_div">
+                <button type="button" class="close">&times;</button>
+                <div class="code_output_message">
+                </div>
+            </div>
+
+            <div class="btn center hidden finished_div">
+                <button type="button" class="close" data-dismiss='alert'>&times;</button>
+                <br/>
+                <h4><span class="finished_title"></span> telah selesai!</h4>
+                <br/>
+                <br/>
+                <a href="#" class="btn btn-primary finished_btn">Berikutnya!</a>
+                <br/>
+                <br/>
+            </div>
+
+            <div class="btn center hidden badge_div">
+                <h4>Anda mendapatkan lencana!</h4>
+                <h2 class="badge_title"></h2>
+                <a class="badge_url" href="#" target="_blank"><div class="badge_img_div"></div></a>
+                <br/>
+                <br/>
+
+<div style="display:none" class="fb-login-button hidden"
+        data-show-faces="true"
+        data-width="200"
+        data-max-rows="1"
+        data-scope="publish_actions">
+</div>
+
+                <input class="btn btn-success hidden" type="button" value="Post ke FB" onclick="postLike();">
+                <a class="badge_url" href="#" target="_blank"><input class="btn btn-info" type="button" value="Post ke FB"></a>
+                <button type="button" class="btn btn-inverse" data-dismiss="alert">Tutup</button>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="output">
+                <div class="output_header modal-header">
+                    Code Output <i class="icon-arrow-down icon-white"></i>
+                </div>
+                <div class="output_content">
+                    <div class="code_output">
+                    </div>
+                    <div class="code_cursor"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+ <!-- main content block -->
+
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- main container -->
+            <div id="push"></div>
+        </div> <!-- wrapper -->
+
+        <!-- Footer -->
+        <div id="footer">
+            <footer class="footer">
+            
+
+            <footer class="footer footer_below">
+            <div class="container">
+                <ul class="bs-docs-social-buttons">
+                    <li>
+                    <div class="fb-like" data-href="http://codesaya.com/" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+                    </li>
+                    <!--
+                    <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://codesaya.com/" data-via="CodeSaya" data-lang="id">Tweet</a>
+                    </li>
+                    -->
+                    <li>
+                    <a href="https://twitter.com/codesaya" class="twitter-follow-button" data-show-count="true" data-lang="id">Follow @codesaya</a>
+                    </li>
+                    <li>
+                    <div class="g-plus" data-annotation="bubble" data-action="share" data-size="medium" data-href="http://codesaya.com/"></div>
+                    </li>
+
+                </ul>
+            </div>
+            </footer>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            window.___gcfg = {lang: 'id'};
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript" src="/codesaya-design/static/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/codesaya-design/static/js/prettify.js"></script>
+<script type="text/javascript" src="/codesaya-design/static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){ // document ready
+            var stickyTop = $('.sticky').offset().top; // returns number
+            $(window).scroll(function(){ // scroll event 
+                var windowTop = $(window).scrollTop(); // returns number
+                if (stickyTop < windowTop) {
+                $('.sticky').css({ position: 'fixed', top: 0 });
+                }
+                else {
+                $('.sticky').css('position','static');
+                }
+                });
+            });
+</script>
+
+
+<script type="text/javascript">
+    
+    var const_eval_code = '';
+    
+    var const_code_lang = 'javascript';
+    var const_code_type = 'client_side';
+    var task_id = 1;
+    
+    $("#btn_login_warning").click(); $("pre, code").addClass('prettyprint');
+    $("a.brand").attr("href", "../../../");
+
+    var objectToLike;
+    var fbAppId = '800754373315498';
+
+    function postLike() {
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'games.achieves',
+            app_id: '800754373315498',
+            action_properties: JSON.stringify({
+            achievement: objectToLike,
+            app_id: '800754373315498',
+            })
+        }, function(response){
+        console.log(response);
+        if (!response) {
+        
+        } else if (response.error) {
+        document.getElementById('share_di_fb').innerHTML =
+        'Laporkan! Error: ' + response.error.message;
+        } else {
+        document.getElementById('share_di_fb').innerHTML =
+        'Berhasil.';
+        }
+        });
+    }
+</script>
+<script type="text/javascript" src="/codesaya-design/static/js/run_prettify.js"></script>
+<script type="text/javascript" src="/codesaya-design/static/codemirror-3.14/lib/codemirror.js"></script>
+
+<script type="text/javascript" src="/codesaya-design/static/codemirror-3.14/mode/javascript/javascript.js"></script> 
+
+<script type="text/javascript" src="/codesaya-design/static/js/javascript.js"></script>
+
+
+<!-- Analytics
+================================================== -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42391114-1', 'codesaya.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
