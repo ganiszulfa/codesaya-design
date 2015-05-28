@@ -1,2 +1,1 @@
-# codesaya-design
-Collaboration tools for codesaya design
+PLEASE REFER TO http://ganiszulfa.github.io/codesaya-design/
