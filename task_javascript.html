@@ -1,6 +1,7 @@
 
 
 
+
 <!--
                  __
                 /\ \
@@ -13,160 +14,198 @@
                                                     \/__/
 -->
 <!DOCTYPE html>
-
-<html lang="id" xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="id">
     <head>
         <meta charset="utf-8">
         <title>CodeSaya | Siapa nama anda? | JavaScript</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Hai..! Mari mengenal satu sama lain. Siapa nama anda? | Belajar coding secara mudah dan menyenangkan tanpa perlu setup apapun. Belajar Programming. Belajar PHP. Belajar JavaScript.">
-        <meta name="author" content="Ganis Zulfa Santoso">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8">
+        <meta name="description" content="Function adalah potongan code yang dapat digunakan berulang-ulang di dalam aplikasi anda. Dengannya anda tidak perlu menyalin dan menempelkan code berkali-kali.
 
-<meta property="fb:app_id" content="800754373315498"/>
+PHP memiliki banyak function yang... | Belajar coding dan programming gratis, mudah, dan seru tanpa install apapun. Belajar Programming. Belajar Python, PHP, JavaScript, Git, dll.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-        <link href="/codesaya-design/static/css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/codesaya-design/static/css/stickyfooter.css">
-        <link href="/codesaya-design/static/css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="/codesaya-design/static/css/docs.css" rel="stylesheet">
-        <link href="/codesaya-design/static/css/googleprettify.css" rel="stylesheet">
+        <meta name="author" content="CodeSaya Team">
+        <meta name="og:author" content="CodeSaya Team">
+        <meta property="og:image" content="https://codesaya.com/static/img/fb_codesaya_4.jpg"/>
 
-        <style type="text/css">
-            .btn-progress {
-                width:100%;
-            }
-            .jumbotron h1 {
-                font-size:60px;
-            }
-            .jumbotron p {
-                font-size:24px;
-            }
-            .subhead h1 {
-                font-size:40px;
-            }
-            .subhead p {
-                font-size:20px;
-                color:#ddd;
-            }
-            .subhead {
-                padding:10px 0;
-            }
-            .masthead {
-                padding:30px 0 20px;
-            }
-            .masthead .btn{
-                padding:14px 19px;
-                font-size:18px;
-            }
-            .marketing h1{
-                font-size:40px;
-            }
-            .marketing h2{
-                font-size:28px;
-            }
-            .footer {
-                margin-top:0px;
-            }
-            .footer {
-                padding:15px 0 0;
-            }
-            hr.soften {
-                margin:15px 0;
-            }
-            .marketing > hr.soften {
-                margin:35px 0;
-            }
-            .tooltip_class {
-                font-size:12px;
-            }
-            .footer_below{
-                background-color:#ececec;
-                border-top: 1px solid #e0e0e0;
-                margin-top:30px;
-                padding:10px 0;
-            }
-            .jumbotron {
-                background: -moz-linear-gradient(45deg,  rgb(2, 0, 30)  0%, rgb(29, 39, 100) 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,  rgb(2, 0, 30) ), color-stop(100%, rgb(29, 39, 100))); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(45deg,  rgb(2, 0, 30)  0%, rgb(29, 39, 100) 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(45deg,   rgb(2, 0, 30) 0%, rgb(29, 39, 100) 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(45deg,  rgb(2, 0, 30) 0%, rgb(29, 39, 100) 100%); /* IE10+ */
-                background: linear-gradient(60deg, rgb(2, 0, 30) 0%, rgb(29, 39, 100) 75%) repeat scroll 0% 0% transparent;
+        <meta name="theme-color" content="#252575" />
+        <meta name="msapplication-navbutton-color" content="#252575" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#252575" />
 
-            }
-            .navbar-fixed-top, .navbar-fixed-bottom {
-                position: static;
-            }      
-            .navbar-inner {
-                padding:0px !important;
-            }
-            body {
-                padding-top:0;
-            }
-            .center {
-                text-align:center;
-            }
-            .alert-not-a-member {
-                margin-top:10px;
-                margin-bottom:-10px;
-            }
-            .list-score .btn {
-                width:35px;
-                margin-left:5px;
-            }
-            .task-container {
-                margin-top:5px;
-            }
-            .profile_image {
-                margin-top:10px;
-
-            }
-            .profile_location {
-                font-size:14px;
-                color:#ccc;
-            }
-            .list-progress {
-                position:absolute;
-                top:5px;
-                right:10px;
-                width:100px;
-            }
-            .progress-black > .bar {
-                color:white;
-                background-color:#333;
-            }
-            .profile_div {
-                padding:10px 0;
-            }
-            .profile_name {
-                font-size:28px;
-                font-weight:bold;
-            }
-            #___plus_0, #___plus_1 {
-                margin-left:-33px !important;
-            }
-        </style>
+        <link href="https://codesaya.b-cdn.net/static/css/bootstrap.flat.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://codesaya.b-cdn.net/static/css/base4.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
-        <script type="text/javascript" src="/codesaya-design/static/js/html5shiv.js"></script>
+        <script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/html5shiv.js"></script>
         <![endif]-->
+        <!-- we are moving thses to base4.css so delete this after 2 or 3 days, by then the base4.css is renewed in every user's browser-->
+        <style type="text/css"> 
+            @media (max-width: 767px) { 
+                .sticky {
+                    position:static !important;
+                }
+
+                body, pre, .btn {
+                    font-size:14px;
+                    line-height:20px;
+                }
+            }
+            @media (max-width: 480px) { 
+                body, pre, .btn {
+                    font-size:12px;
+                    line-height:18px;
+                }
+            }
+        ul.errorlist {
+            list-style-type: none;
+            margin:0;
+        }
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+select {
+
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+        background-repeat:no-repeat;
+          background-position: right 10px top 4px;
+            background-size: 16px 16px;
+  border-radius:3px;
+  padding: 0;
+  -webkit-border-radius:3px;
+  -webkit-appearance: none;
+  border:0;
+  outline:0;
+  -webkit-transition:0.3s ease all;
+       -moz-transition:0.3s ease all;
+        -ms-transition:0.3s ease all;
+         -o-transition:0.3s ease all;
+            transition:0.3s ease all;
+}
+
+select:focus, select:active {
+      border:0;
+        outline:0;
+}
+        </style>
 
         
-<link rel="stylesheet" type="text/css" href="/codesaya-design/static/codemirror-3.14/lib/codemirror.css">
-<link rel="stylesheet" type="text/css" href="http://codemirror.net/theme/ambiance.css">
 <style type="text/css">
+    .code_input_div {
+        margin-left:380px;
+    }
+    .code_output_div {
+        bottom:130px;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/codemirror.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/theme/dracula.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/theme/material.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.0.0/theme/zenburn.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/theme/solarized.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/theme/ambiance.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/theme/monokai.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/theme/eclipse.css">
+
+<style type="text/css">
+    .premium_div {
+        z-index:300;
+        position:fixed;
+        left:2%;
+        top:2%;
+        right:2%;
+        bottom:2%;
+        width:96%;
+        height:96%;
+    }
+
+    .code_input_div {
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        width:auto;
+        height:auto;
+    }
+    #div_code_input_div > .CodeMirror {
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        z-index:100;
+    }
+    .code_output {
+        overflow-y:auto;
+    }
+
+    .code_output_div {
+        z-index:200;
+        position:absolute;
+    }
+
     .brand {
         position:absolute;
         left:10px;
+        display:block !important;
     }
     .user-btn {
         position:absolute !important;
         right:10px;
         }
-    .bar-main_menu {
+    .bar-main_menu .nav {
         display:none;
+    }
+    .bar-main_menu .pull-right {
+        display:block;
     }
     #push
     {
@@ -183,42 +222,17 @@
     }
     .task_info_content {
         padding:10px;
-        width:310px;
+        width:360px;
         overflow-y: auto;
         overflow-x: hidden;
         position:absolute;
-        margin-top:44px;
+        margin-top:53px;
         margin-bottom:34px;
         left:0;
         top:0;
         bottom:0;
         right:0;
     }
-    .code_input_div {
-        position:absolute;
-        margin-top:44px;
-        margin-bottom:34px;
-        margin-left:330px;
-        left:0;
-        top:0;
-        bottom:0;
-        right:0;
-        width:auto;
-        height:auto;
-        z-index:100;
-    }
-    .CodeMirror.cm-s-ambiance {
-        height:auto !important;
-        position:absolute;
-        margin-top:39px;
-        margin-bottom:140px;
-        left:0;
-        top:0;
-        bottom:0;
-        right:0;
-        z-index:100;
-    }
-
     .finished_div {
         width:320px;
         z-index:250;
@@ -226,39 +240,29 @@
         left:30px;
         top:30px;
     }
-
-    .code_output {
-        overflow-y:auto;
-        height:100px;
+    .please_login_div {
+        z-index:300;
+        position:absolute;
+        left:-50px;
+        top:20px;
+        max-width:300px;
     }
-
     .badge_div {
         z-index:300;
         position:absolute;
-        left:30px;
+        left:5px;
         top:30px;
     }
-
-    .code_output_div {
-        z-index:200;
-        position:absolute;
-        bottom:130px;
-        left:20px;
-        right:20px;
-        max-width:500px;
-    }
-
     .output_content {
-        padding:10px;
+        padding:7px;
     }
     .output {
-        position:absolute;
-        background-color:#555 ;
-        color:white;
-        height:139px;
+        background-color:#333 ;
+        color:#e8e8e8;
         border-top:1px solid #777;
         width:100%;
-        bottom:0;
+        bottom:0px;
+        position:absolute;
         font-family:Monaco,Menlo,"Andale Mono","lucida console","Courier New",monospace !important;
     }
     .output_header {
@@ -272,68 +276,237 @@
     overflow-x:auto;
     white-space:pre;
     }
+
     .cm-s-ambiance .cm-comment {
         color: rgb(129, 129, 129);
     }
     .cm-s-ambiance .CodeMirror-linenumber {
         color: rgb(10, 10, 10);
     }
-    .alert-success {
-    color:rgb(50, 80, 50);
+
+    #tutorial_4 {
+        display:inline-block;
+        margin-right:-5px;
     }
-    .alert-info {
-    color:rgb(30, 90, 130);
+    .shadow {
+        background-image:url('https://codesaya.b-cdn.net/static/img/shade1x1.png'); position:absolute; left:0; top:0; width:100%;
+        z-index:100;
+        opacity:0.7;
+    }
+    @media (max-width: 767px) { 
+        #div_code_input_div {
+            top: -52px ;
+        }
+        .task_info_content {
+            top: -52px;
+            width: 150px;
+        }
+        .code_input_div {
+            margin-left:170px ;
+        }
+
+        .code_output_div {
+            bottom:50px ;
+        }
+
+        .navbar {
+            display:none;
+        }
+    }
+    .modal-fullscreen {
+            width: 96%;
+            left: 2%;
+            top: 5px !important;
+            margin-left:0px;
+    }
+    .modal-body {
+            min-height: 200px;
+    }
+
+    #div_code_input_div > .CodeMirror {
+            height:100%;
+    }
+    .code_sample_div > .CodeMirror {
+            height:100%;
+    }
+</style>
+
+
+<style type="text/css">
+    .code_input_div {
+        margin-top:44px;
+        margin-bottom:34px;
+    }
+    #div_code_input_div > .CodeMirror {
+        height:auto !important;
+        margin-top:89px;
+        margin-bottom:140px;
+    }
+
+    .code_output {
+        height:100px;
+    }
+
+    .code_output_div {
+        left:20px;
+        right:20px;
+        max-width:500px;
+    }
+
+    .output {
+        height:139px;
+    }
+
+    @media (max-width: 767px) { 
+        .output {
+            height:64px ;
+        }
+        #div_code_input_div > .CodeMirror {
+            margin-bottom:65px ;
+            margin-top:69px ;
+        }
+
+        .code_output {
+            height:23px ;
+        }
+        .btn {
+            padding:4px 12px;
+        }
+        .btn-mini {
+            padding:1px 8px;
+        }
+    }
+    @media (max-width: 480px) { 
+        #div_code_input_div > .CodeMirror {
+            margin-top:65px ;
+        }
+    }
+
+    #output_content {
+            height:initial;
+            border:0;
+    }
+    .output_content_white {
+            border-left:1px solid #ddd !important;
+    }
+    .select_theme_div {
+        margin-top:8px;
+        margin-left:8px;
+    }
+    @media (max-width: 767px) { 
+        .select_theme_div {
+                margin-top:2px;
+                margin-left:8px;
+        }
     }
 </style>
 
 
         <!-- Le fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" href="/codesaya-design/static/img/favicon_cs.png">
-        <link rel="shortcut icon" href="/codesaya-design/static/img/favicon_cs.ico">
+        <link rel="apple-touch-icon-precomposed" href="https://codesaya.b-cdn.net/static/img/favicon_cs.png">
+        <link rel="shortcut icon" href="https://codesaya.b-cdn.net/static/img/favicon_cs.ico">
+        <!-- Analytics
+        ================================================== -->
+        
+        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', 'UA-42391114-1', 'codesaya.com');
+                ga('require', 'linkid', 'linkid.js');
+                ga('send', 'pageview');
+                
+        </script>
+        
+
     </head>
 
     <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js"></script>
         <div id="wrap">
             <!-- Navbar-->
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
+            <div class="navbar navbar-fixed-top">
+                <div id="div_navbar" class="navbar-inner">
                     <div class="container">
-                        <a class="brand" href="/">CodeSaya</a>
+                        <a class="brand" style="display:none;" href="/">CodeSaya</a>
                         <div class="bar-main_menu">
                             <ul class="nav">
                                 
-                                <li None>
-                                <a href="/"><i class="icon-home icon-white"></i> Utama</a>
+                                <li style="margin-left:0px" None>
+                                <a href="/"><i class="ion-home icon-white"></i><span class="hidden-phone"> Utama</span></a>
                                 </li>
-                                <li None>
-                                <a href="/belajar/"><i class="icon-asterisk icon-white"></i> Belajar</a>
+
+                                <li class="dropdown">
+                                    <a id="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="ion-university icon-white"></i> Belajar
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                        <li None>
+                                            <a href="/belajar/"><i class="ion-ios-book icon-white"></i> Kelas</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li None>
+                                            <a href="/artikel/"><i class="ion-document-text icon-white"></i> Artikel</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li None>
-                                <a href="/diskusi/"><i class="icon-comment icon-white"></i> Diskusi</a>
+
+                                <li class="dropdown">
+                                    <a id="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="ion-earth icon-white"></i> Komunitas
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                        <li None>
+                                            <a href="/diskusi/"><i class="ion-chatboxes icon-white"></i> Diskusi</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li None>
+                                            <a href="/grup/"><i class="ion-person-stalker icon-white"></i> Grup</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                             </ul>
+
+                            <ul class="nav pull-right">
+                             
+                              <li class="dropdown">
+                                <a id="top_right_user_menu" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="ion-star icon-white"></i> joshuaaugustpratikno
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                    <li id="notification_link" class="li_notif ">
+                                        <a href="/notifikasi/"><i class="icon-white ion-ios-bell"></i> (<span id="notif_count">0</span>) Notifikasi</a></li>
+                                    <li class="li_notif divider"></li>
+                                    <li><a href="/u/joshuaaugustpratikno/"><i class="icon-white ion-person"></i> Lihat Profil</a></li>
+                                    <li><a href="/u/joshuaaugustpratikno/edit/"><i class="icon-white ion-edit"></i> Ubah Profil</a></li>
+                                        
+                                            <li class="li_notif divider"></li>
+                                            <li><a href="/artikel/saya/"><i class="icon-white ion-briefcase"></i> Manajemen Artikel</a></li>
+                                        
+                                     
+                                    <li class="divider"></li>
+                                    <li><a href="/php/function-di-php/function-bagian-1/unit/1/"><i class="icon-white ion-code"></i> Tugas Terakhir</a></li>
+                                    
+                                    <li class="divider"></li>
+                                    <li None>
+                                        <a href="/panduan/"><i class="icon-question-sign icon-white"></i> Panduan</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="/keluar/"><i class="icon-white icon-off"></i> Keluar</a></li>
+                                </ul>
+                              </li>
+
+
                             
+                        </ul>
                         </div>
 
-                                
-
-                         
-                        <div class="user-btn pull-right btn-group">
-                            <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="icon-user icon-white"></i> ganis
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="pull-right dropdown-menu">
-                                <li><a href="/u/ganis/"><i class="icon-user"></i> Lihat Profil</a></li>
-                                <li><a href="/u/ganis/edit/"><i class="icon-pencil"></i> Ubah Profil</a></li>
-                                 
-                                <li class="divider"></li>
-                                <li><a href="/javascript/pengenalan-javascript/saling-mengenal/unit/1/"><i class="icon-chevron-left"></i> Tugas Berikutnya</a></li>
-                                
-                                <li class="divider"></li>
-                                <li><a href="/keluar/"><i class="icon-off"></i> Keluar</a></li>
-                            </ul>
-                        </div>
                         
 
                     </div>
@@ -342,82 +515,74 @@
 
             <!-- Begin page content -->
 
-            <div class="main_container">
+            <div id="div_block_banner" class="main_container">
                 
 
                 <div class="container">
-                    <div class="row">
+                    <div id="div_block_main_content" class="row">
                         
-
-<div class="task-container container">
+<input type='hidden' name='csrfmiddlewaretoken' value='OzuOLkP1ccNxHtzY2tem08CUpzjs0Q2H$IB4hHDxcNX46JyItLyxJOlcFFFhDcCIcOREzJnE7dQE' />
+<div id="div_task_container" class="task-container container">
     <div class="row">
         <div class="span4 task_info">
             <div class="task_info_content">
                 
 
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- cs_ads_on_task -->
-                <ins class="adsbygoogle"
-                         style="display:inline-block;width:320px;height:50px"
-                              data-ad-client="ca-pub-3842907543632795"
-                                   data-ad-slot="3451447202"></ins>
-                               <script>
-                                   (adsbygoogle = window.adsbygoogle || []).push({});
-                               </script>
-                               <br/>
+                
 
                 <div class="back_to_content">
-                    <a href="../../../" class="btn btn-inverse btn-mini"><i class="icon-chevron-left icon-white"></i>kembali ke daftar isi</a>
+                    <a href="../../../" class="btn btn-inverse btn-mini"><i class="icon-chevron-left icon-white"></i>kembali<span class="hidden-phone"> ke daftar isi</span></a>
                     <div class="btn-group btn-mini pull-right">
-                        <a class="btn dropdown-toggle btn-mini" data-toggle="dropdown" href="#">daftar unit<span class="caret"></span></a>
+                        <a class="btn dropdown-toggle btn-mini" data-toggle="dropdown" href="#"><span class="hidden-phone">daftar</span> unit <i class="icon-chevron-down icon-white"></i></a>
                         <ul class="dropdown-menu">
                             
                             <li class="">
                             <a data-toggle="tooltip" title="Siapa nama anda?" href="#/" class="  ">
                                 
-                                <i class="icon-ok"></i>
+                                <i class="icon-remove icon-white"></i>
                                 
-                                Unit 1: Siapa nama anda?
+                                Unit 1<span class="hidden-phone">: Siapa nama anda?</span>
                                 
-                                <i class="icon-fire"></i> 
+                                <i class="icon-fire icon-white"></i> 
                                 
                             </a></li>
                             
                             <li class="">
                             <a data-toggle="tooltip" title="Mencari Panjang String" href="../2/" class="  ">
                                 
-                                <i class="icon-ok"></i>
+                                <i class="icon-remove icon-white"></i>
                                 
-                                Unit 2: Mencari Panjang String
+                                Unit 2<span class="hidden-phone">: Mencari Panjang String</span>
                                 
                             </a></li>
                             
                             <li class="">
                             <a data-toggle="tooltip" title="Matematika Sederhana" href="../3/" class="  ">
                                 
-                                <i class="icon-ok"></i>
+                                <i class="icon-remove icon-white"></i>
                                 
-                                Unit 3: Matematika Sederhana
+                                Unit 3<span class="hidden-phone">: Matematika Sederhana</span>
                                 
                             </a></li>
                             
                             <li class="">
                             <a data-toggle="tooltip" title="Angka dan yang lain" href="../4/" class="  ">
                                 
-                                <i class="icon-ok"></i>
+                                <i class="icon-remove icon-white"></i>
                                 
-                                Unit 4: Angka dan yang lain
+                                Unit 4<span class="hidden-phone">: Angka dan yang lain</span>
                                 
                             </a></li>
-                            
+
                         </ul>
                     </div>
                 </div>
+                <h3>
                                 
                 
                 
-                <div alt="Terselesaikan!" data-toggle="tooltip" title="Anda sudah menyelesaikan tugas ini." style="margin-top:5px;" id="task_status" class="pull-right label label-success">
-                    <i class="icon-ok"></i>
+                <div alt="Belum terselesaikan!" data-toggle="tooltip" title="Unit ini belum selesai." style="margin-top:5px;" id="task_status" class="pull-right label hidden-phone label-important">
+                    <i class="icon-remove"></i>
                 </div>
                 
                 
@@ -427,40 +592,120 @@
                 
                                 
                 
+                                
                 
-                <h3>
+                                
+                
+                                
+                
+                                
+                
+                
                     Siapa nama anda?
                 </h3>
                 <div class="tutorial">
+                    <div id="tutorial_1"
+                    style="position:relative;top:130px;"
+                    data-toggle="confirmation" data-placement="top" data-title="Tampaknya anda baru di CodeSaya! Tur ini akan menjelaskan cara belajar di CodeSaya. Kolom ini adalah tutorial dari unit ini."
+                    data-btnOkLabel='<div class="tut_next_1">Ok, mengerti</div>'
+                    data-btnCancelClass="hidden" data-singleton="true" data-popout="false"
+                        ></div>
                     
-                    Hai..! Mari mengenal satu sama lain. Siapa nama anda?
+                    <p>Hai..! Mari mengenal satu sama lain. Siapa nama anda?</p>
                     
                 </div>
+                <div id="tutorial_2"
+                style="position:relative;top:10px;"
+                data-toggle="confirmation" data-placement="top" data-title="Ini adalah instruksi. Kerjakan ini untuk melaju ke soal berikutnya!"
+                data-btnOkLabel='<div class="tut_next_2">Ok, mengerti</div>'
+                data-btnCancelClass="hidden" data-singleton="true" data-popout="false"
+                ></div>
                 <hr class="soften"/>
                 <div class="instruction alert alert-success">
                     <b><i class="icon-arrow-right"></i> Instruksi:</b><br />
                     
-                    Ketik nama anda, dan beri tanda petik di sekitarnya. Seperti ini: <code>"Bill Gates"</code> dan tekan tombol "Periksa dan Simpan".
+                    <p>Ketik nama anda, dan beri tanda petik di sekitarnya. Seperti ini: <code>"Bill Gates"</code> dan tekan tombol "Periksa dan Simpan".</p>
                     
                 
            
                 </div>
+                
                 </div>
-                <a target="_blank" style="position:fixed;bottom:7px;left:10px;font-size:16px;"_blank" data-toggle="tooltip" title="Buka forum diskusi untuk subchapter ini." href="/diskusi/javascript/pengenalan-javascript/saling-mengenal/" class="center full-width">
-                    <i class="icon-comment"></i> Forum Diskusi
+
+                <a target="_blank"
+                    style="position:absolute;bottom:7px;left:10px;font-size:16px;"
+                    data-toggle="tooltip" 
+                    title="Buka forum diskusi untuk subchapter ini." 
+                    href="http://codesaya.com/diskusi/javascript/pengenalan-javascript/saling-mengenal/"
+                    class="center full-width">
+                    <i class="icon-comment"></i> Forum 
+                    <span class="hidden-phone" style="display:inline-block">Diskusi</span>
                 </a>
+                <div class="center full-width" 
+                    style="position:absolute;bottom:34px;left:5px;"
+                    id="tutorial_5" data-toggle="confirmation" data-placement="top"
+                    data-title="Silahkan menuju forum untuk bertanya atau sekedar berdiskusi. Tour selesai..!! Selamat belajar coding..!!"
+                    data-btnOkLabel='<div class="tut_next_5">Siap, ayo coding..!!</div>'
+                    data-btnCancelClass="hidden" data-singleton="true" data-popout="false">
+                </div>
         </div> <!-- end task info -->
 
-        <div class="span8 code_input_div">
+        
+        <div id="div_code_input_div" class="span8 code_input_div">
             <div class="form_button">
-                <button href="#"  class="pull-left btn btn-inverse btn-large">script.js</button>
-                <button href="#" data-toggle="tooltip" title="Periksa & simpan code anda." style="margin-left:10px;" class="btn btn-info submit_code">Periksa & Simpan</button>
-                <button data-toggle="tooltip" title="Mengulangi code dari awal." class="btn reset_code btn-danger" style="margin-left:10px;" type="reset">Ulangi</button>
-                <a data-toggle="tooltip" title="Menuju soal berikutnya." style="margin-left:10px;" class="btn disabled btn-inverse next_btn">Berikutnya</a>
+                <button href="#" data-toggle="tooltip" data-placement="bottom" title="Periksa & simpan code anda."
+                    style="margin-top:12px" class="btn btn-info submit_code">
+                    <i class="icon-play icon-white"></i>
+                    <span class="hidden-phone">Periksa</span>
+                </button>
+
+                <div style="position:absolute;top:35px;left:20px;"id="tutorial_4" data-toggle="confirmation" data-placement="bottom"
+                    data-title="Tekan 'Periksa' untuk mengevaluasi code anda. Tekan 'Ulang' untuk mengembalikan ke kondisi semula."
+                    data-btnOkLabel='<div class="tut_next_4">Ok, mengerti</div>'
+                    data-btnCancelClass="hidden" data-singleton="true" data-popout="false"></div>
+
+                <button data-toggle="tooltip" data-placement="bottom" title="Mengulangi code dari awal." class="btn reset_code btn-danger" style="margin-top:12px;margin-left:2px;" type="reset">
+                    <i class="icon-refresh icon-white"></i>
+                    <span class="hidden-phone">Ulang</span>
+                </button>
+
+                <a data-toggle="tooltip" data-placement="bottom" title="Menuju soal berikutnya."
+                style="margin-top:12px;margin-left:2px;" class="btn disabled btn-inverse next_btn">
+                
+                    <i class="icon-step-forward icon-white"></i>
+                    <span class="hidden-phone">Lanjut</span>
+                </a>
+
+                <a href="#myModal" role="button" class="btn" data-toggle="modal" id="open-premium-btn"
+                        style="color:#555;background-color:gold;margin-top:12px;margin-left:2px;"
+                        >
+                    <i class="ion ion-star"></i>
+                    <span class="hidden-phone hidden-tablet">Premium</span>
+                </a>
+
             </div>
+            <div class="form_button">
+                <button href="#" id="file_name" style="margin-top:5px"  class="pull-left btn btn-inverse">
+                    <span class="">script.js</span>
+                </button>
+
+                <button style="margin-top:5px;margin-left:5px;" 
+                class="pull-left visible-phone btn btn-mini btn-success hide_task_info">
+                    <i class="ion ion-chevron-left "></i> 
+                </button>
+
+            </div>
+
             <textarea name="code" id="code_console">"ganis"</textarea>
+            <div style="position:absolute;top:85px;left:40px;" id="tutorial_3"
+                    data-toggle="confirmation" data-placement="bottom"
+                    data-title="Disini adalah tempat anda untuk menuliskan code. Pastikan anda mengikuti tutorial dan instruksi!"
+                    data-btnOkLabel='<div class="tut_next_3">Ok, mengerti</div>'
+                    data-btnCancelClass="hidden" data-singleton="true" data-popout="false"
+            ></div>
 
             <div class="hidden" id="initial_code"></div>
+
 
             <div class="code_output_div">
                 <button type="button" class="close">&times;</button>
@@ -468,7 +713,7 @@
                 </div>
             </div>
 
-            <div class="btn center hidden finished_div">
+            <div id="div_btn_next_task" class="btn center hidden finished_div" style="background-color:#fafafa;color:#333">
                 <button type="button" class="close" data-dismiss='alert'>&times;</button>
                 <br/>
                 <h4><span class="finished_title"></span> telah selesai!</h4>
@@ -479,42 +724,164 @@
                 <br/>
             </div>
 
-            <div class="btn center hidden badge_div">
+            
+
+            <div id="div_badge_announcement" class="btn center hidden badge_div" style="background-color:#fafafa;color:#333">
                 <h4>Anda mendapatkan lencana!</h4>
                 <h2 class="badge_title"></h2>
                 <a class="badge_url" href="#" target="_blank"><div class="badge_img_div"></div></a>
                 <br/>
                 <br/>
 
-<div style="display:none" class="fb-login-button hidden"
-        data-show-faces="true"
-        data-width="200"
-        data-max-rows="1"
-        data-scope="publish_actions">
-</div>
+                <div style="display:none" class="fb-login-button hidden"
+                        data-show-faces="true"
+                        data-width="200"
+                        data-max-rows="1"
+                        data-scope="publish_actions">
+                </div>
 
                 <input class="btn btn-success hidden" type="button" value="Post ke FB" onclick="postLike();">
-                <a class="badge_url" href="#" target="_blank"><input class="btn btn-info" type="button" value="Post ke FB"></a>
+                <a id="post_badge_to_social" class="badge_url" href="#" target="_blank"><input class="btn btn-info" type="button" value="Post ke FB/Twitter/Path"></a>
                 <button type="button" class="btn btn-inverse" data-dismiss="alert">Tutup</button>
 
                 <div id="result"></div>
             </div>
 
+        
             <div class="output">
                 <div class="output_header modal-header">
                     Code Output <i class="icon-arrow-down icon-white"></i>
                 </div>
-                <div class="output_content">
+                <div id="output_content" class="">
                     <div class="code_output">
                     </div>
                     <div class="code_cursor"></div>
                 </div>
             </div>
 
+
         </div>
 
     </div>
 </div>
+<!-- Modal -->
+<div id="myModal" class="modal modal-fullscreen hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+ 
+<div class="tabbable boxed parentTabs">
+    <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#temaeditor" data-toggle="tab">
+            <i class="ion ion-paintbrush"></i> tema <span class="hidden-phone">editor</span>
+          </a>
+        </li>
+        <li>
+          <a href="#riwayatcode" data-toggle="tab">
+            <i class="ion ion-stats-bars"></i> riwayat <span class="hidden-phone">code</span>
+          </a>
+        </li>
+        <li>
+          <a href="#intipcode" data-toggle="tab">
+            <i class="ion ion-search"></i> intip <span class="hidden-phone">code</span>
+          </a>
+        </li>
+        <button style="margin-top:6px;" class="btn btn-small btn-danger" data-dismiss="modal" aria-hidden="true">Tutup</button>
+        <span><a style="margin-top:6px;" class="btn btn-small btn-success" href="/premium/panduan/" target="_blank" title="Lihat panduan untuk premium">?</a></span>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade " id="intipcode">
+            <div class="tabbable">
+                <form id="form-search">
+                        <button id="search-btn" type="submit" class="btn btn-primary">
+                                <i class="ion ion-search"></i> Intip Code (quota: 5)
+                        </button>
+                </form>
+                <div id="intipcode-progress">
+                </div>
+
+                <ul class="nav nav-tabs" id="intipcode-nav">
+                </ul>
+                <div class="tab-content" id="intipcode-cnt">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="riwayatcode">
+            <div class="tabbable">
+                <form id="form-history">
+                        <button id="history-btn" type="submit" class="btn btn-primary">
+                                <i class="ion ion-eye"></i> Lihat Riwayat 
+                        </button>
+                </form>
+                <div id="riwayatcode-progress">
+                </div>
+                <ul class="nav nav-tabs" id="riwayatcode-nav">
+                </ul>
+                <div class="tab-content" id="riwayatcode-cnt">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade active in" id="temaeditor">
+
+<form class="form-horizontal" action=""
+        enctype="multipart/form-data" method="post">
+   <div class="control-group ">
+        <label class="control-label" for="select_theme">Pilih Tema:</label>
+        <div class="controls">
+                <select onchange="selectTheme()" id="theme-btn" class="input-medium search-query">
+                        <option value="dracula">Aramba</option>
+                        <option value="zenburn">Guoto</option>
+                        <option value="solarized dark">Nafiri</option>
+                        <option value="material">Sasando</option>
+                        <option value="ambiance" selected>Serunai</option>
+                        <option value="eclipse">Tehyan</option>
+                        <option value="monokai">Tuma</option>
+                </select>
+        </div>
+    </div>
+</form>
+        <div class="code_sample_div">
+            <textarea name="code" id="code_sample"
+># ini adalah contoh
+# code dalam python
+from keren import codesaya
+
+print 'CS' * 5
+def sapa(nama):
+  return 'halo '+str(nama)
+
+angka = [17,
+  8, 1945]</textarea>
+
+        </div>
+        <br/>
+                <button id="tema-apply-btn" type="submit" class="btn btn-primary">
+                        <i class="ion ion-checkmark"></i> Gunakan
+                </button>
+                <button id="tema-reset-btn" type="submit" class="btn btn-warning">
+                        <i class="ion ion-refresh"></i> Batal
+                </button>
+        </div>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+<div id="theme_modal_alert" class="modal modal-fullscreen hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body center">
+        <h3>
+                Anda bukanlah anggota premium.
+        </h3>
+                <p>Anda bisa menggunakan tema ini, tetapi pilihan tema anda tidak akan disimpan.</p>
+                
+
+                
+        <button style="margin-top:6px;" class="btn btn-small btn-danger" data-dismiss="modal" aria-hidden="true">OK</button>
+  </div>
+</div>
+
+<div class="shadow"></div>
  <!-- main content block -->
 
                     </div> <!-- row -->
@@ -532,72 +899,135 @@
             <div class="container">
                 <ul class="bs-docs-social-buttons">
                     <li>
-                    <div class="fb-like" data-href="http://codesaya.com/" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+                    <a class="popup_window" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodesaya.com%2Fphp%2Ffunction-di-php%2Ffunction-bagian-1%2Funit%2F1%2F" ><img style="" width="75px" height="26px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAaCAMAAADIQlGKAAABklBMVEXs7Ow6VaRFYbU7VaVHZLhGYrZEYLP///86VKM7VqZIZbk5U6JJZbpJZrpJZrtKZ7tHY7c8VqdAW6w9V6g9WKg9WKk+Wak/WqtBXK5DXq9DX7JCXrH//+80So/iwajx//8+WqhAYLM4UZ4+V6U7VKKQ0/rg//9CW+A7oeg6U6BNZKw/Wqo+Waqr3vziwq65W67z/////vY+o+j///s5So5FXJs3wPJab6+4wt48VKC3Wav87uOGsuM/U5Lhvp08wPA4WKt0W67o+f/229f4///ny8X01tDJzNB4x/NddcBnfsTHzuLK0eU6WrXy9Pnz1sz/+PLS9P/o4u5XXbLF7f356vT///zBfZrYsqaEzfaycpLz0rzT5PZLsOvs///hytdBVaeRbbE9uPFEWbWk3P0zSaMzSZpTu+7d6fdSdM6+bauyvNOyu9M+VuJGYaY/WNJyy/Xcur+EccY8as5ToejnxrT/49OWoOhcWbXIk6D55eBtuu/Kl7GtWKmtcrF+bbBDXr9BXL3m0eI+VLPmwrK5XrHa2hQkAAACL0lEQVR42uXQB08iQRQHcEF2H5xXYFC2syuISu8CogiWOzvoeV7vtuu99/a97+0sA0aSJGSTJInvn53Me5v9ZWYHTkuVVy+ct5eVMrNWzp21m1VmnXHZD7O8Li/HS53iOZe37zCL4zh5HTq1LnP9F7OcnFNi0CY+Iufknhc0rDrujqVY2ChqG7jrSdfinXFLKsdIDIDwTn5iHNv80mV8100uk5qDFO56wyyZl9tWTCFhgDgvo9XkfyazX6VZTQuNmuvswSieC62iVqdTbEMFrS7zmK6lyIZlGcKmuSqyMjF+U9vfa31/mASo3sc1e6T+y+l4rtqXxYsf6TSnb2fw6IqMYZakSG0rTs8XViS0AKv544F64/Zi6hCWHm2paWr91j83rGlOr77eUdMKfo/WJWqJohgGrIpBiFHZhjAO8I7irwgE783cykAwoj4WI2p6Ug/OAWQ/idY0p78zp6JZzCIioVbUEEi4BGgRapFJvXk9f3dGNy2DWa359w1rii21CIbdkQjEDbQ8HnN1CEQw/9fB8u61ZPbqMtQO4S/ecRo/noLgy3x7iq0QUacFgmFWQki0rTE3XYWE8Mz8X7sLjbfzcOXOwp8ktI7QypjWi63qBzrFlloJDLMCI4Exy6pEqTUSOJEpqO3vqd86fW+Y5R/2O9aAKqa55hj2n8ibHYDsq27fG2b5PD6HO4QVHXREQ9GhQY+v7zBr0GM/zIq5HXZTYtbT0pDbXmJPBk5H/QcyF30G3XX2lgAAAABJRU5ErkJggg=="></a>
                     </li>
-                    <!--
-                    <li>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://codesaya.com/" data-via="CodeSaya" data-lang="id">Tweet</a>
+                    <li class="hidden-phone">
+                    <a class="hidden-phone popup_window" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcodesaya.com%2F&text=Saya%20merekomendasikan%20CodeSaya%20untuk%20belajar%20coding!%20Belajar%20%26%20Diskusi%20Python%2C%20PHP%2C%20JS%2C%20Git%2C%20dll." >
+                        <img width="123px" height="22px" style="" src="data:image/png;base64,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">
+                    </a>
                     </li>
-                    -->
-                    <li>
-                    <a href="https://twitter.com/codesaya" class="twitter-follow-button" data-show-count="true" data-lang="id">Follow @codesaya</a>
+                    <li class="hidden-phone">
+                    <a class="popup_window" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fcodesaya.com%2F&screen_name=codesaya" ><img width="116px" height="28px" style="" src="data:image/png;base64,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"></a>
                     </li>
-                    <li>
-                    <div class="g-plus" data-annotation="bubble" data-action="share" data-size="medium" data-href="http://codesaya.com/"></div>
+                    <li class="">
+                    <a class="popup_window" href="https://plus.google.com/share?url=http%3A%2F%2Fcodesaya.com%2F" ><img width="72px" height="24px" style="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAYCAMAAABuvUuCAAABL1BMVEXs7Ozuo5j88vHrrlzmdWWFJSMmJibT09P////fSjH//82r6f/d3d0lI2Xkalj09fVgrOzsl4siYa/rjX/O//8lI4frvHXq/83/0H730Mzyu7P53NinXB3gUzwdgtEqJip9WC8mJHtWo9v0+Nva2trk5OT/+9kffMa+6/Hwr6bogXHwr6XiXkr4//+89P9WMyQfdcMlMl6uYxtkOioyVID4/+FcVSL/47n415yKrNi64v8kitGBx/PkvIjiq10oJ2VLJ0coNlbx8e72zX7XnkaucDRBJGUkP4b75+X2xr9LidGFQSHi/+okTXL/+MbJhDqr4v+Xx+wrOWWhYzV8rN+r6upKn9F7uuX/6tTktWsmJjrrtWNts+XBs9jH1urc/81NY2kkRKLQhBE5VU5OTkfYdkG0AAABV0lEQVR42s3Ux3LCMBQFUGQL+z0gBtMSqumd9B4CJJT03nv9/2+IsJkxAyReKAvuQos74zPPsiXbhMYl8yXTdzJu4IvbZUAy8EYegEKEImKYGwpRgDD6+CeqELYoCH/m/tVh91hAWGILQQHMOOyStHMHA2l/vFlClRgzVNojTSi12w74YTDWE0ViykGYCgZkPvQU8K8lpOXNXEf76jpF77Td02rW9Eo8SWiH1REIhJAPI4zpxXy1x2fY3liJbol7heCUDr03a/0qWQgmZ0cgFhV9MDxRq+tcX5Kk+GceZgxIapyDXokBP6tGIKFIfQoqwtAePTRuFufT0bg50e2Z91ivxkORWJkZZSTDX+26GpxbWM2nO9q3AXlOj1J6VR8LKVQvShTGJ/firrMNsf4h0RAI+Q260i4vAKwhFYsAsE8F7iNCKFKVcJ9+3sj/fLFlua/arG3y8gM/yUQ5jhL4hwAAAABJRU5ErkJggg=="></a>
                     </li>
+
 
                 </ul>
             </div>
             </footer>
             </footer>
         </div>
-        <script type="text/javascript">
-            window.___gcfg = {lang: 'id'};
-(function() {
- var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
- po.src = 'https://apis.google.com/js/plusone.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
- })();
-</script>
 
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<script type="text/javascript" src="http://codesaya.com/static/js/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="http://codesaya.com/static/js/prettify.js"></script>
-<script type="text/javascript" src="http://codesaya.com/static/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    $(function(){ // document ready
-            var stickyTop = $('.sticky').offset().top; // returns number
-            $(window).scroll(function(){ // scroll event 
-                var windowTop = $(window).scrollTop(); // returns number
-                if (stickyTop < windowTop) {
-                $('.sticky').css({ position: 'fixed', top: 0 });
-                }
-                else {
-                $('.sticky').css('position','static');
-                }
-                });
-            });
+var is_user_premium = 0;
+ 
+    is_user_premium = 1;
+ 
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/base4.js"></script>
+
+ 
+
 
 
 <script type="text/javascript">
+    var const_code_lang = 'text/x-php';
+    var const_code_type = 'server_side';
+    var task_id = 122;
+    var is_member = "True";
+
     
     var const_eval_code = '';
     
-    var const_code_lang = 'javascript';
-    var const_code_type = 'client_side';
-    var task_id = 1;
     
+
+                    
+        
+            var already_finished = false;
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+    
+
+$(document).ready(function(){
+    if (!1) {
+        $(".shadow").css("height", $(document).height()).hide();
+        $(".shadow").toggle();
+        $(".task_info_content").animate({ scrollTop: 0 }, "slow");
+        $('#tutorial_1[data-toggle="confirmation"]').confirmation('show');
+        var maybe_tut_is_not_working = true;
+        var maybe_tut_is_not_working2 = true;
+
+        $(this).oneTime("9s", function(i) {
+                if (maybe_tut_is_not_working) {
+                        $('#tutorial_1[data-toggle="confirmation"]').confirmation('destroy');
+                        $(".shadow").hide();
+                }
+        }, 0);
+
+        $('body').on("click", ".tut_next_1", function() {
+            maybe_tut_is_not_working = false;
+            $('#tutorial_2[data-toggle="confirmation"]').confirmation('show');
+            $('#tutorial_1[data-toggle="confirmation"]').confirmation('destroy');
+            $(".task_info_content").animate({ scrollTop: (3*$(".task_info_content").height()) }, "slow");
+
+            $(this).oneTime("8s", function(i) {
+                if (maybe_tut_is_not_working2) {
+                        $('#tutorial_2[data-toggle="confirmation"]').confirmation('destroy');
+                        $(".shadow").hide();
+                }
+            }, 0);
+
+        });
+
+        $('body').on("click", ".tut_next_2", function() {
+            maybe_tut_is_not_working2 = false;
+            $('#tutorial_3[data-toggle="confirmation"]').confirmation('show');
+            $('#tutorial_2[data-toggle="confirmation"]').confirmation('destroy');
+        });
+
+        $('body').on("click", ".tut_next_3", function() {
+            $('#tutorial_4[data-toggle="confirmation"]').confirmation('show');
+            $('#tutorial_3[data-toggle="confirmation"]').confirmation('destroy');
+        });
+
+        $('body').on("click", ".tut_next_4", function() {
+            $('#tutorial_5[data-toggle="confirmation"]').confirmation('show');
+            $('#tutorial_4[data-toggle="confirmation"]').confirmation('destroy');
+        });
+
+        $('body').on("click", ".tut_next_5", function() {
+            $('#tutorial_5[data-toggle="confirmation"]').confirmation('destroy');
+            $(".task_info_content").animate({ scrollTop: 0 }, "slow");
+            $(".shadow").hide();
+        });
+    }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript">
     $("#btn_login_warning").click(); $("pre, code").addClass('prettyprint');
     $("a.brand").attr("href", "../../../");
 
@@ -614,7 +1044,6 @@
             app_id: '800754373315498',
             })
         }, function(response){
-        console.log(response);
         if (!response) {
         
         } else if (response.error) {
@@ -627,25 +1056,192 @@
         });
     }
 </script>
-<script type="text/javascript" src="/codesaya-design/static/js/run_prettify.js"></script>
-<script type="text/javascript" src="/codesaya-design/static/codemirror-3.14/lib/codemirror.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/codemirror.js"></script>
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/googleprettify.js"></script>
 
-<script type="text/javascript" src="/codesaya-design/static/codemirror-3.14/mode/javascript/javascript.js"></script> 
+<script type="text/javascript">
+// from javascript.js
+$('.hint').slideUp('fast', function() {
+});
 
-<script type="text/javascript" src="/codesaya-design/static/js/javascript.js"></script>
+$('.show_hint').click(function() {
+    $('.hint').slideToggle('slow', function() {
+    });
+    return false;
+});
 
+// constant value for reset button
+var const_text_reset = $("#initial_code").text(); 
 
-<!-- Analytics
-================================================== -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+// constant js code, specific for each problem
+// will be added in the last line of the submitted code
+// can be blank
+// [MOVED to the templates]
+$("button.reset_code").click(function(e) {
+    editor.setValue(const_text_reset);
+    return false;
+});
 
-    ga('create', 'UA-42391114-1', 'codesaya.com');
-    ga('send', 'pageview');
+$('.code_output_div').fadeOut('fast', function() {
+});
+
+$('.code_output_div .close').click(function() {
+    $('.code_output_div').fadeOut('slow', function() {
+    });
+    return false;
+});
 
 </script>
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/task.js"></script>
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/bootstrap-confirmation.js"></script>
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/mode/clike/clike.js"></script> 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.14.1/mode/php/php.js"></script> 
+
+
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/task_code.js"></script>
+
+<script type="text/javascript">
+         
+                var initial_user_theme = "ambiance";
+         
+</script>
+
+ 
+        <script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/task_code_premium.js"></script>
+ 
+
+<script>
+var task_info_show = true;
+$(".hide_task_info").click(function (){
+    if (task_info_show) {
+        $( ".task_info_content" ).animate({
+            width: "0px",
+            padding: "0px",
+        }, {
+            duration: 500,
+            specialEasing: {
+                    width: "linear",
+                    height: "easeOutBounce"
+            },
+            complete: function() {
+                $(".hide_task_info").html('<i class="ion ion-chevron-right "></i>'); 
+
+         }
+        });
+
+                $( ".code_input_div" ).animate({
+                    margin: "44px 0px 32px 5px",
+                }, {
+                    duration: 700,
+                    specialEasing: {
+                    width: "linear",
+                    height: "easeOutBounce"
+                    },
+                });
+    } else {
+        $( ".code_input_div" ).animate({
+            margin: "44px 0px 32px 170px",
+        }, {
+            duration: 500,
+            specialEasing: {
+                    width: "linear",
+                    height: "easeOutBounce"
+            },
+            complete: function() {
+                $(".hide_task_info").html('<i class="ion ion-chevron-left"></i>'); 
+         }
+        });
+                $( ".task_info_content" ).animate({
+                    width: "150px",
+                    padding: "10px",
+                }, {
+                    duration: 700,
+                    specialEasing: {
+                    width: "linear",
+                    height: "easeOutBounce"
+                    },
+                });
+
+    }
+    task_info_show = !task_info_show;
+});
+</script>
+
+
+
+<script type="text/javascript">
+
+$(window).bind("load", function() {
+        $('.popup_window').popupWindow({ 
+                centerScreen:1 
+        }); 
+
+    $('.dropdown-toggle').dropdown();
+
+        if( typeof canRunAds === 'undefined' ){ 
+                $('a.ads_image').removeClass('hidden');
+        } else {
+        }
+});
+
+
+
+var repeat_notification = function(total, repeat) {
+
+    if ( total > 0 && (repeat % 2) == 0 ) {
+
+            $('#top_right_user_menu').addClass("btn-warning");
+            $('#notification_link').addClass("btn-warning");
+
+    } else {
+            $('#top_right_user_menu').removeClass("btn-warning");
+            $('#notification_link').removeClass("btn-warning");
+    }
+
+    $(window).oneTime( "250ms", function(i) {
+        repeat -= 1;
+        if (total > 0 && repeat>=0)
+            repeat_notification(total, repeat);
+    }, 0);
+
+}
+
+$(window).bind("load", function() {
+
+        var notif_timer_cnt = 0;
+        
+        var get_notifications_count = function() {
+                $.ajax({
+                type: "GET",
+                data: { },
+                url: "/notifikasi/total/",
+                success : function(data) {
+                        data = jQuery.parseJSON(data);
+                        var total = data.total*1;
+                        $('#notif_count').text(total);
+                        repeat_notification(total, 4)
+
+                        $(window).oneTime( String(notif_timer_cnt+20)+"s", function(i) {
+                                notif_timer_cnt+=5;
+                                if (notif_timer_cnt>280) {
+                                    notif_timer_cnt = 280;
+                                }
+                                get_notifications_count();
+                        }, 0);
+                    }
+                });
+
+        }
+
+        get_notifications_count();
+
+});
+
+</script>
+
+
 </body>
 </html>
+<!-- lpWcJJeFRM58GO7cpICfsMo5naKf04DJ6Iq1LGXqOWiaEFVe5CO8Uxn8X99aQml7REJV -->
